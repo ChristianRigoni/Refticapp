@@ -1,0 +1,21 @@
+09/03/2022 12h15        Sqltransaction: renommer executer en _executer pour ne pas publier la fonction avec un défaut qui ne journalise pas.
+                        Si on utilise executer ici il faut que ce soit volontaire.
+26/07/2021 14h20        Spnego: ajout de l'attribut userAccountControl qui permet de savoir si un compte est désactivé
+25/07/2021 08h45        TicCalendar: ajout de get_months_diff pour cddstag
+08/02/2020 10h40        Définition de la class SqlResultat utilisé pour retourner nb_isql et nb_rows
+28/12/2019 15h16        Sql: ajout de collate_ci_ai pour pouvoir faire des comparaisons de chaines case insensitive et accent insensitive
+22/12/2019 16h55        SqlVue: ajout de getColumnDateiso() pour convertir la chaine iso en jj/mm/yyyy
+04/04/2019 12h10        Spnego: ajout de l'attribut destinationIndicator utilisé pour filtrer les départements Servtec
+                        ContexteAD: ajout du membre departement_no_pattern pour filtrer les départements
+20/03/2019 10h20        Retour arrière sur Spnego, on prend le service dans l'OU pour les comptes
+                        Ajout de Sql.chainesql_proteger() qui entoure une chainesql de select t.* from ( chainesql ) t
+19/03/2019 12h10        Ajout de l'attribut division dans spnego. Il est utilisé par les comptes AD qui permettent de gérer un service
+04/12/2018 10h45        Ajout de Base.is_host_reachable()
+04/11/2018 12h30        TicCalendar: modification de la fonction dernier_jour_du_mois et ajout constructor avec GregorianCalendar
+31/10/2018 16h15        TicCalendar: ajout chaineiso_parse
+29/09/2018 09h10        Spnego: retrait de la classe Samaccount et déplacement des attributs communs depuis Referentiel vers Refticapp
+27/08/2018 21h00        Spnego: ajout attribut_street utilisé dans les OU départements pour stocker le lien vers le service PAIE.
+15/08/2018 11h40        SqlVue: mettre stamp_type public pour pouvoir y accéder et ajout string_type
+                        Sqlsource: ajout de l'attribut string_type à la classe Sqlsource
+
+						
